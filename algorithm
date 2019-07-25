@@ -3,3 +3,24 @@ Process a list of all users logged in (and out) on a UNIX/Linux system from a te
 (2) normalized all the records so that each record has the same login and logout date
 (3) select records for the same user or the same remote machine
 (4) based on the records selected in step (3), create daily, weekly, or monthly report in the format specified.
+
+(??
+The points given about are just the main tasks. You need to add details to each of them and put them in the appropriate sections: 
+i.e. INPUT, PROCESS, and OUTPUT as discussed in class. I expanded the first main point for you and it should go into the process section:
+
+(1) Read all the login/logout records from each of the files given at the command line.
+    for each file
+    (a) open the file
+    (b) read one line at a time from the file
+    (c) if the line contains full login and logout information, add it to a list to be processed
+    
+(2) normalized all the records so that each record has the same login and logout date
+    for each login/logout record in the list creatd in step (1)
+    (a) pass it to the normalization function (note: use the one from the professor)
+    (b) add the returned record(s) to the normalized record list
+    ...
+    ??)
+    
+    (?? you need to devlope this into a workable algorithm with enough details ??)
+    
+    (?? let me know if you need more help on this ??)
